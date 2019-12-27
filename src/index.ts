@@ -26,8 +26,7 @@ if (program.peppers) console.log("  - peppers");
 if (program.pineapple) console.log("  - pineapple");
 if (program.bbq) console.log("  - bbq");
 
-const cheese: string =
-  true === program.cheese ? "marble" : program.cheese || "no";
+const cheese: string = program.cheese ? program.cheese : "no";
 
 console.log("  - %s cheese", cheese);
 
